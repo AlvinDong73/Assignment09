@@ -21,10 +21,22 @@ public class Assignment9 {
 
         tracker.addMovie("bob", jaws);
         tracker.addMovie("bob", matrix);
+        
+        tracker.addMovie("jane", frozen);
+        tracker.addMovie("jane", frozen);
 
         // getMovies returns the set of movies for one user
         System.out.println("=== getMovies ===");
         System.out.println("alice: " + tracker.getMovies("alice"));
-      
+        System.out.println("bob: " + tracker.getMovies("bob"));
+
+        // Jane does not have any duplicate movies
+        System.out.println("jane: " + tracker.getMovies("jane"));
+
+        // hasWatched returns whether or not a user has seen a particular movie
+        System.out.println("=== hasWatched ===");
+        System.out.println("Has alice seen Inception? " + tracker.hasWatched("alice", inception));
+        System.out.println("Has alice seen Frozen? " + tracker.hasWatched("alice", frozen));
+        System.out.println("Has bob seen Inception? " + tracker.hasWatched("bob", inception));
     }
 }
