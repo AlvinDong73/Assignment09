@@ -33,7 +33,7 @@ user has seen. However, in order to find what users have seen a given
 movie, we would have to iterate over the keys of this HashMap and check
 if the given movie is in the set of movies they have seen. One hypothetical
 implementation of such a method would look like
-```
+```java
 public HashSet<String> getSeen(Movie movie) {
     HashSet<String> users = new HashSet<>();
     for (String user : watchedmovies.keySet()) {
