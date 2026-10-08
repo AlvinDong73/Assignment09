@@ -32,6 +32,7 @@ public class Assignment9 {
 
         // Jane does not have any duplicate movies
         System.out.println("jane: " + tracker.getMovies("jane"));
+        System.out.println("jane has seen " + tracker.getMovies("jane").size() + " movie(s)");
 
         // hasWatched returns whether or not a user has seen a particular movie
         System.out.println("=== hasWatched ===");
